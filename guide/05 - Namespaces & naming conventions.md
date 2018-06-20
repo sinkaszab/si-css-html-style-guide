@@ -1,5 +1,6 @@
 # 05 - Namespaces & naming conventions
-**SI*CSS + HTML**
+
+**SI CSS + HTML**
 
 #si*css+html/naming-convention
 
@@ -23,8 +24,11 @@ However if you are working on a long term project you’ll most likely spend a l
 ```
 
 Seeing only the CSS can make you confused. Is it *article search + bar* or *article + search bar*? Let’s abstract the problem:
-- - - -
+
+---
+
 *Fig. 1*
+
 ```css
 lorem-ipsum-dolor-amet-sit {
   ...
@@ -32,15 +36,20 @@ lorem-ipsum-dolor-amet-sit {
 ```
 
 Could you identify the parts?
-- - - -
+
+---
 
 *Fig. 2*
+
 ```pseudo
-var loremIpsum = new Dolor().ametSit();
+var loremIpsum = new LoremIpsum();
+loremIpsum.dolor.ametSit();
 ```
 
 It’s not just the naming but also the grammar context what helps in most programming languages.
-- - - -
+
+---
+
 *Fig. 3*
 ```css
 loremIpsum-dolor-ametSit {
