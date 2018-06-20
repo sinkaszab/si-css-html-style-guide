@@ -27,7 +27,7 @@ You have to handle declaring your globally applied rules with great care:
 
 Whenever thinking about CSS, take it into consideration that it was born to support a much simpler idea with *now* a great responsibility to be backwards compatible as much as it can be.
 
-> “[CSS] was originally designed to maintain the ideal of html as a content delivery thing that has semantic meaning,” said Tab Atkins Jr., a spec hacker at Google, in a  [Web Platform Podcast](http://thewebplatform.libsyn.com/50-the-evolution-of-css). “Particularly so machines can understand.”
+> “[CSS] was originally designed to maintain the ideal of html as a content delivery thing that has semantic meaning,” said Tab Atkins Jr., a spec hacker at Google, in a [Web Platform Podcast](http://thewebplatform.libsyn.com/50-the-evolution-of-css). “Particularly so machines can understand.”
 
 [The Evolution of CSS](https://blogs.adobe.com/creativecloud/the-evolution-of-css/)
 
@@ -37,7 +37,7 @@ Whenever thinking about CSS, take it into consideration that it was born to supp
 
 ### Avoid “negators”.
 
-Negators are properties that will try to revert inherited properties’ effects. Fixing a property that is useless for a component creates junk.
+Negators are properties that will try to revert inherited properties’ effects. “Fixing” a property that is useless for a component creates junk.
 
 ```css
 btn {
