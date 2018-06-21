@@ -4,17 +4,11 @@
 
 #si*css+html/rule-types
 
-## Units & Structures
-
-### Why “unit”?
-
-By design I try to avoid common “buzzwords” like *module* and *component*. Simply to make it easier to make a difference.
-
-### So what is a “unit”?
-
-Cut the crap, let’s talk about what constraints a unit needs to conform:
+## Components
 
 ...
+
+## Component rule types
 
 - Base rules
 - Constraint rules
