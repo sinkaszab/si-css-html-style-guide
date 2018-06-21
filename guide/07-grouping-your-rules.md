@@ -12,8 +12,7 @@
 
 - Base rules
 - Constraint rules
-- Modifier rules
-- State rules
+- Modifier & State rules
 
 ...
 
@@ -46,7 +45,7 @@ The example might be a bit over-exaggerated, but the main point is:
 
 Normalising the base elements is a more modern and less intrusive approach, so that's the preferred solution. However this might depend on what you need to support.
 
-## Modifier/State rules
+## Modifier & State rules
 
 ```css
 .isActive {
