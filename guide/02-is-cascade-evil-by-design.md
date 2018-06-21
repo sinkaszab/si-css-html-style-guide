@@ -17,7 +17,7 @@ With a small set of rules CSS is capable of styling a huge traversible structure
 
 You have to handle declaring your globally applied rules with great care:
 
-- Elements alike don’t necessarily mean small difference.
+- Elements alike don’t necessarily mean small difference in CSS.
 - Specificity creates more specificity.
 - The closer to the root, the greater the impact. It’s not only styles that cascade, but also bad design decisions.
 
@@ -35,7 +35,7 @@ Whenever thinking about CSS, take it into consideration that it was born to supp
 
 ## Recommendations
 
-### Avoid “negators”.
+### Avoid “negators”
 
 Negators are properties that will try to revert inherited properties’ effects. “Fixing” a property that is useless for a component creates junk.
 
@@ -45,7 +45,7 @@ btn {
 }
 
 btn-link {
-  border: none;
+  border-color: transparent; /* == none */
 }
 ```
 
@@ -55,6 +55,6 @@ btn-link {
 
 If the next design for `btn` component ignores borders, and you miss to update `btn-link` the *negator* rule, you can increment that debt counter. Why would you remember? Semantically it seems incorrect to grow `btn-link` out of `btn` anyway.
 
-### Start with small rules
+### Start with small rule-sets
 
 Common rules should be small to keep flexibility in children.
