@@ -156,6 +156,16 @@ Well, in an ideal world, these components might share their active state. But wh
 - Duplication resolved with preprocessing CSS.
 - But we still have that dangling, specificity increasing non-existent interface.
 
+```sccs
+.isActive {}
+
+.taskCard {
+  &--isActive {
+    @extend .isActive;
+  }
+}
+```
+
 3. Let's call object oriented design for help. We need an `isActive` interface and different traits that implement the interface for more types of components.
 
 Might be a good solution, if there are still common properties. Prepocessors can help to cleaner represent this scenario.
@@ -172,19 +182,25 @@ Might be a good solution, if there are still common properties. Prepocessors can
 }
 
 // main.scss
-.taskCard--isActive {
-  @extend %cardLike--isActive; // use trait
+.taskCard {
   /* ... */
+  &--isActive {
+    @extend %cardLike--isActive; // use trait
+  }
 }
 
-.projectList-item--isActive {
-  @extend %cardLike--isActive; // use trait
+.projectList-item {
   /* ... */
+  &--isActive {
+    @extend %cardLike--isActive; // use trait
+  }
 }
 
-.loginButton--isActive {
-  @extend %buttonLike--isActive; // use trait
+.loginButton {
   /* ... */
+  &--isActive {
+    @extend %buttonLike--isActive; // use trait
+  }
 }
 ```
 
