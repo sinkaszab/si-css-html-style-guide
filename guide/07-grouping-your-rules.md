@@ -214,4 +214,4 @@ Might be a good solution, if there are still common properties. Prepocessors can
 }
 ```
 
-What this enables us is to hide the interface behind the implementation.
+What this enables us is to hide the implementation behind the interface.
